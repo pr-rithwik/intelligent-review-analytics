@@ -19,3 +19,48 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## Project Information
+
+**Project Name**: Intelligent Review Analytics Platform  
+**Description**: A comprehensive sentiment analysis platform demonstrating progressive ML algorithms, business intelligence generation, and production deployment capabilities.  
+**Author**: [Your Name]  
+**Version**: 1.0.0  
+**Purpose**: Data science portfolio project showcasing end-to-end ML lifecycle expertise
+
+## Dataset Attribution
+
+This project uses Amazon product review data for educational and portfolio demonstration purposes. The original dataset structure and format are based on publicly available Amazon review datasets commonly used in machine learning research and education.
+
+## Third-Party Libraries
+
+This project makes use of several open-source libraries, each governed by their respective licenses:
+
+- **NumPy**: BSD License
+- **Pandas**: BSD License  
+- **Scikit-learn**: BSD License
+- **Matplotlib**: Matplotlib License (BSD-compatible)
+- **Seaborn**: BSD License
+- **NLTK**: Apache License 2.0
+- **Transformers (Hugging Face)**: Apache License 2.0
+- **XGBoost**: Apache License 2.0
+- **Streamlit**: Apache License 2.0
+- **Plotly**: MIT License
+
+## Academic and Commercial Use
+
+This software is provided under the MIT License for educational, academic, and commercial use. If you use this code or methodology in your research or commercial applications, please provide appropriate attribution.
+
+## Disclaimer
+
+This project is created for educational and portfolio demonstration purposes. While the code is production-quality, users should perform their own testing and validation before deploying in production environments. The author assumes no responsibility for any damages or losses resulting from the use of this software.
+
+## Citation
+
+If you use this project in academic work, please cite as:
+
+```
+[Your Name]. (2024). Intelligent Review Analytics Platform: Progressive ML Algorithms for Sentiment Analysis. GitHub repository: https://github.com/pr-rithwik/intelligent-review-analytics
+```
