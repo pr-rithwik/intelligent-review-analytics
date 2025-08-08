@@ -1,0 +1,166 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Environment variables
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Data files (sensitive/large)
+data/raw/*.tsv
+data/raw/*.csv
+data/raw/*.json
+data/processed/*.pkl
+data/processed/*.parquet
+*.h5
+*.hdf5
+
+# Model artifacts (large files)
+models/*/model.pkl
+models/*/model.joblib
+models/*/*.bin
+models/*/*.pt
+models/*/*.pth
+models/*/pytorch_model.bin
+models/*/tokenizer.json
+models/*/vocab.txt
+models/*/config.json
+
+# Logs
+logs/
+*.log
+
+# Output files
+outputs/figures/*.png
+outputs/figures/*.jpg
+outputs/figures/*.pdf
+outputs/reports/*.html
+outputs/reports/*.pdf
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Google Colab
+.colab/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# API Keys and secrets
+secrets.json
+api_keys.txt
+*.pem
+*.key
+
+# Large datasets (keep structure, ignore data)
+data/external/
+data/interim/large_*
+data/backup/
+
+# MLflow
+mlruns/
+
+# Weights & Biases
+wandb/
+
+# DVC
+.dvc
+.dvcignore
+
+# Keep important structure files
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/baseline/.gitkeep
+!models/traditional/.gitkeep
+!models/advanced/.gitkeep
+!outputs/insights/.gitkeep
+!outputs/figures/.gitkeep
+!outputs/reports/.gitkeep
