@@ -50,7 +50,7 @@ The initial baseline was established using a Logistic Regression model with TF-I
 
 | Algorithm           | Accuracy         | F1-Score       |
 | ------------------- | ---------------- | -------------- |
-| Logistic Regression | `[YOUR_ACCURACY]%` | `[YOUR_F1_SCORE]` |
+| Logistic Regression | `82%` | `0.77` |
 
 ---
 
