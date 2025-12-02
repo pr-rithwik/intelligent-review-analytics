@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 def load_raw_data(filepath: Path) -> pd.DataFrame:
     """
-    Load raw TSV data from file.
+    Load raw TSV data from file with automatic encoding detection.
     
     Args:
         filepath: Path to TSV file
@@ -29,14 +29,29 @@ def load_raw_data(filepath: Path) -> pd.DataFrame:
     
     logger.info(f"Loading raw data from: {filepath}")
     
-    # Load TSV with proper encoding
-    df = pd.read_csv(
-        filepath,
-        sep='\t',
-        encoding='utf-8',
-        header=None,  # No header row in this dataset
-        on_bad_lines='skip'  # Skip malformed lines
-    )
+    # Try multiple encodings in order of likelihood
+    encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'cp1252']
+    
+    df = None
+    for encoding in encodings:
+        try:
+            logger.info(f"Attempting to load with encoding: {encoding}")
+            df = pd.read_csv(
+                filepath,
+                sep='\t',
+                encoding=encoding,
+                header=None,  # No header row in this dataset
+                on_bad_lines='skip',  # Skip malformed lines
+                encoding_errors='replace'  # Replace undecodable characters
+            )
+            logger.info(f"Successfully loaded with encoding: {encoding}")
+            break
+        except UnicodeDecodeError:
+            logger.warning(f"Failed to load with encoding: {encoding}")
+            continue
+    
+    if df is None:
+        raise ValueError(f"Could not load file with any known encoding: {filepath}")
     
     # Basic validation
     if df.empty:
