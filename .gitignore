@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/phase1/raw/*.tsv
+data/phase1/processed/*.csv
+data/phase2/
+
+# Models
+models/phase1/*.pkl
+models/phase2/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+
+# Environment
+.env
+
+# Logs
+*.log
+
+# Temp
+temp/
+
+# Misc
+load.sh
+*_pp.py

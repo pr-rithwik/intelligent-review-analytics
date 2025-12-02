@@ -10,28 +10,16 @@
 
 ## 2. Project Status & Strategic Roadmap
 
+### Roadmap
+- [X] Phase 1: Baseline model (4K reviews)
+- [ ] Phase 2: Production scale (140M reviews)
+- [ ] Phase 3: Advanced models
+- [ ] Phase 4: Cloud deployment
+
+Phase 1: Completed
+Phase 2: In Development
+
 This project is being developed in a phased approach to ensure a robust and scalable final product.
-
-### **Current Status:**
-✔️ **Data Pipeline:** Successfully built a data processing pipeline for 4000+ Amazon product reviews.
-
-✔️ **Baseline Model:** Implemented and evaluated a Logistic Regression model to establish a baseline performance metric.
-
-✔️ **Core Insights:** Conducted initial exploratory data analysis (EDA) to extract foundational business insights.
-
-✔️ **Framework:** The core project structure is in place, ready for the implementation of more advanced models.
-
-### **Development Roadmap**
-
--   **Phase 2: Advanced Model Implementation (In Progress)**
-    -   [ ] Implement and evaluate `SVM` and `Random Forest` models.
-    -   [ ] Implement and evaluate production-grade `XGBoost` model.
-    -   [ ] Integrate `BERT` via the Transformers library for state-of-the-art accuracy.
-
--   **Phase 3: Application & Deployment**
-    -   [ ] Develop an interactive `Streamlit` web application for business users.
-    -   [ ] Build data visualizations with `Plotly` to communicate insights.
-    -   [ ] Deploy the final application to the cloud for live access.
 
 ---
 
@@ -54,20 +42,7 @@ The initial baseline was established using a Logistic Regression model with TF-I
 
 ---
 
-## 5. Repository Structure
-
-```
-intelligent-review-analytics/
-├── data/ # Raw and processed datasets
-├── notebooks/ # EDA and model development notebooks
-├── src/ # Python source code modules (e.g., for data cleaning)
-└── README.md # Project documentation
-```
-
-
----
-
-## 6. Getting Started
+## 5. Getting Started
 
 ### **Prerequisites**
 - Python 3.8 or higher

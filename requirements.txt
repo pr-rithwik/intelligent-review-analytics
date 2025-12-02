@@ -1,0 +1,11 @@
+# Minimal requirements - latest versions
+pandas
+numpy
+scikit-learn
+nltk
+matplotlib
+seaborn
+streamlit
+python-dotenv
+tqdm
+joblib
